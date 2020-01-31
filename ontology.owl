@@ -1,0 +1,541 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt"
+     xml:base="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2003/06/sw-vocab-status/ns#term_status -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#associatedArticle -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#associatedArticle">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#associatedTo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#MotoGPClip"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#Article"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#associatedTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#associatedTo"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#eventOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#eventOf">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#hasEvent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#hasEvent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#hasEvent">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#MotoGPClip"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#hasMotoGPClip -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#hasMotoGPClip">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#motoGPClipOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#MotoGPRace"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#MotoGPClip"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#hasObjectInvolved -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#hasObjectInvolved">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#objectInvolvedIn"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#Event"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#MotoGPObject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#hasTelemetryData -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#hasTelemetryData">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#isTelemetryDataOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#MotoGPRace"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#TelemetryData"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#isTelemetryDataOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#isTelemetryDataOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#motoGPClipOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#motoGPClipOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#objectInvolvedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#objectInvolvedIn"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#abstract -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#abstract">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#MotoGPClip"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#article -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#article">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#Article"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#author -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#author">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#MotoGPClip"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#clipNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#clipNumber">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#MotoGPClip"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#comment -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#comment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#Article"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#MotoGPClip"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#contentURL -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#contentURL">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#MotoGPClip"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#corp -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#corp">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#rider"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#date">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#MotoGPRace"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#endFrame -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#endFrame">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#Event"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#endTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#endTime">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#MotoGPClip"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#expires -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#expires">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#MotoGPClip"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#fragmentNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#fragmentNumber">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#Event"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#frame -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#frame">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#MotoGPObject"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#hasTrackAudio -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#hasTrackAudio">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#MotoGPClip"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#hasTrackVideo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#hasTrackVideo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#MotoGPClip"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#location -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#location">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#Event"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#MotoGPRace"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#media -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#media">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#Article"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#motoGPObjectAccuracy -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#motoGPObjectAccuracy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#MotoGPObject"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#motoGPObjectClass -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#motoGPObjectClass">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#MotoGPObject"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#motoGPObjectGeometry -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#motoGPObjectGeometry">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#MotoGPObject"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#motoGPObjectName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#motoGPObjectName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#MotoGPObject"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#nationality -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#nationality">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#rider"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#number -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#number">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#rider"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#organization -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#organization">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#Article"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#recordedAt -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#recordedAt">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#MotoGPClip"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#recordedDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#recordedDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#MotoGPClip"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#startFrame -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#startFrame">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#Event"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#startTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#startTime">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#MotoGPClip"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/age -->
+
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/age">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#rider"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment>The age in years of some agent.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:label>age</rdfs:label>
+        <ns:term_status>unstable</ns:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#MotoGPRace"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#rider"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment>A name for some thing.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <rdfs:label>name</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#Article -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#Article"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#Event -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#Event"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#MotoGPClip -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#MotoGPClip"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#MotoGPObject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#MotoGPObject"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#MotoGPRace -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#MotoGPRace"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#TelemetryData -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#TelemetryData"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#bike -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#bike">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#MotoGPObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#bikeAndRider -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#bikeAndRider">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#MotoGPObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#box -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#box">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#boxStaff -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#boxStaff">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#MotoGPObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#crash -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#crash">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#finish -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#finish">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#flag -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#flag">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#MotoGPObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#null -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#null">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#overtaking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#overtaking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#rider -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#rider">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#MotoGPObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#safetyCar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#safetyCar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#MotoGPObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#startGrid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#startGrid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2019/11/homework-swt#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Agent -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
