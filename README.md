@@ -1,6 +1,6 @@
 # SWT_Project_2019-2020
 ## Introduzione
-Il progetto tratta la ricerca sui formati di metadatazione standardizzata per videoclip digitali e costruzione di un'ontologia che permetta la ricerca e descrizione semantica di un videoclip di un evento sportivo di tipo motoristico, in particolare MotoGP. Successivamente la realizzazione di un'applicazione con il framework JENA che faccia una ricerca SPARQL in due dataset remoti, in particolare il dataset Dorna (Fornito da terzi) e il dataset DBPedia. Ed infine, sempre con quest'ultima applicazione, la popolazione dell'ontologia precedentemente creata con il dataset di individui appena estratto.
+Il progetto tratta la ricerca sui formati di metadatazione standardizzata per videoclip digitali e costruzione di un'ontologia che permetta la ricerca e descrizione semantica di un videoclip di un evento sportivo di tipo motoristico, in particolare MotoGP. Successivamente la realizzazione di un'applicazione con il framework JENA che faccia una ricerca SPARQL in due dataset remoti, in particolare il dataset Dorna (Fornito da terzi, vedi [Dorna.json](https://github.com/ponassi/SWT_Project_2019-2020/blob/master/Dorna.json)) e il dataset DBPedia. Ed infine, sempre con quest'ultima applicazione, la popolazione dell'ontologia precedentemente creata con il dataset di individui appena estratto.
 
 ## Architettura
 Per questo progetto sono state prese le seguenti scelte architetturali:
