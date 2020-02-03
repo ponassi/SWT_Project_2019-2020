@@ -28,6 +28,24 @@ Come precedentemente spiegato il file Functions.java contiene funzioni generaliz
 ```java
 public static String GetSourceQuery(String source, String className)
 ```
+Questa funzione permette di creare query specifiche per specifici dataset. L'implementazione corrente presenta la query sui rider sul dataset DBPedia, così fatta:
+```java
+case "dbpedia":
+				switch(className) {
+					case "rider":
+						return 	 GetSourceQueryPrefix(source) + 
+				        		"SELECT ?name ?bd ?team ?bikeNumber {\r\n" + 
+				        		"dbpedia:%s dbpedia-owl:birthDate ?bd .\r\n" + 
+				        		"dbpedia:%s foaf:name ?name .\r\n" +
+				        		"dbpedia:%s dbp:bikeNumber ?bikeNumber .\r\n" +
+				        		"dbpedia:%s dbpedia-owl:team ?team .\r\n" +
+				        		"}";
+					default:
+						return "";
+				}
+```
+E' possibile aggiungere una query su una determinata classe aggiungendo un case all'interno dello switch del dataset generato.
 ```java
 public static String GetSourceQueryPrefix(String source)
 ```
+Questa funzione ritona i prefissi SPARQL necessari al corretto funzionamento delle query descritte nella funzione precedente. Aggiungendo un dataset è necessario aggiungere un case specifico allo switch interno alla funzione.
