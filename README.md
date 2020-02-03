@@ -9,14 +9,14 @@ Per questo progetto sono state prese le seguenti scelte architetturali:
 - [Fuseki](https://jena.apache.org/documentation/fuseki2/): Java SPARQL web server per la visualizzazione dei dati dell'ontologia appena popolata.
 
 ## I file
-- Homework.java: contiene il processo principale dell'applicazione:
+- [Homework.java](https://github.com/ponassi/SWT_Project_2019-2020/blob/master/Homework.java): contiene il processo principale dell'applicazione:
   - Importazione dell'ontologia creata,
   - Data ingestion da JSON Dorna e DBPedia tramite ricerca SPARQL,
   - Creazione di individui descritti dalle proprietà appena estratte,
   - Popolamento dell'ontologia ed esportazione in formato RDF,
   - Aggiuta degli individui su web server Fuseki.
 
-- Functions.java: contiene le funzioni generalizzate per:
+- [Functions.java](https://github.com/ponassi/SWT_Project_2019-2020/blob/master/Functions.java): contiene le funzioni generalizzate per:
   - Creazione modello con framework Jena
   - Generazione di query SPARQL per interrogare un determinato dataset specifico
   - Creazione individui con specifiche proprietà
@@ -31,20 +31,20 @@ public static String GetSourceQuery(String source, String className)
 Questa funzione permette di creare query specifiche per specifici dataset. L'implementazione corrente presenta la query sui rider sul dataset DBPedia, così fatta:
 ```java
 case "dbpedia":
-				switch(className) {
-					case "rider":
-						return 	 GetSourceQueryPrefix(source) + 
-				        		"SELECT ?name ?bd ?team ?bikeNumber {\r\n" + 
-				        		"dbpedia:%s dbpedia-owl:birthDate ?bd .\r\n" + 
-				        		"dbpedia:%s foaf:name ?name .\r\n" +
-				        		"dbpedia:%s dbp:bikeNumber ?bikeNumber .\r\n" +
-				        		"dbpedia:%s dbpedia-owl:team ?team .\r\n" +
-				        		"}";
-					default:
-						return "";
-				}
+	switch(className) {
+		case "rider":
+			return 	 GetSourceQueryPrefix(source) + 
+				"SELECT ?name ?bd ?team ?bikeNumber {\r\n" + 
+				"dbpedia:%s dbpedia-owl:birthDate ?bd .\r\n" + 
+				"dbpedia:%s foaf:name ?name .\r\n" +
+				"dbpedia:%s dbp:bikeNumber ?bikeNumber .\r\n" +
+				"dbpedia:%s dbpedia-owl:team ?team .\r\n" +
+				"}";
+		default:
+			return "";
+	}
 ```
-E' possibile aggiungere una query su una determinata classe aggiungendo un case all'interno dello switch del dataset generato.
+E' possibile aggiungere una query su una determinata classe aggiungendo un case all'interno dello switch del dataset generato. E' inoltre possibile aggiungere query su classi di altri dataset specificando la nuova sorgente nello ```switch(source)```.
 ```java
 public static String GetSourceQueryPrefix(String source)
 ```
