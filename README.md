@@ -24,7 +24,7 @@ Per questo progetto sono state prese le seguenti scelte architetturali:
   - Aggiunta di individui su web server Fuseki
 
 ## Aggiunta di dataset o classi da interrogare
-Come precedentemente spiegato il file Functions.java contiene funzioni generalizzate che interrogano uno specifico dataset. In questo caso il progetto contiene unicamente il collegamento al dataset DBPedia. Per aggiungere un dataset bisogna specificare il comportamento modificando le seguenti funzioni:
+Come precedentemente spiegato il file [Functions.java](https://github.com/ponassi/SWT_Project_2019-2020/blob/master/Functions.java) contiene funzioni generalizzate che interrogano uno specifico dataset. In questo caso il progetto contiene unicamente il collegamento al dataset DBPedia. Per aggiungere un dataset bisogna specificare il comportamento modificando le seguenti funzioni:
 ```java
 public static String GetSourceQuery(String source, String className)
 ```
@@ -49,3 +49,6 @@ E' possibile aggiungere una query su una determinata classe aggiungendo un case 
 public static String GetSourceQueryPrefix(String source)
 ```
 Questa funzione ritona i prefissi SPARQL necessari al corretto funzionamento delle query descritte nella funzione precedente. Aggiungendo un dataset è necessario aggiungere un case specifico allo switch interno alla funzione.
+
+## Descrizione funzioni generalizzate
+Il codice presenta una documentazione XML al suo interno con la spiegazione di ogni funzione nello specifico (Consultare i file [Homework.java](https://github.com/ponassi/SWT_Project_2019-2020/blob/master/Homework.java) e [Functions.java](https://github.com/ponassi/SWT_Project_2019-2020/blob/master/Functions.java))
