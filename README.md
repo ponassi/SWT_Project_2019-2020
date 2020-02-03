@@ -51,4 +51,4 @@ public static String GetSourceQueryPrefix(String source)
 Questa funzione ritona i prefissi SPARQL necessari al corretto funzionamento delle query descritte nella funzione precedente. Aggiungendo un dataset è necessario aggiungere un case specifico allo switch interno alla funzione.
 
 ## Descrizione funzioni generalizzate
-Il codice presenta una documentazione XML al suo interno con la spiegazione di ogni funzione nello specifico (Consultare i file [Homework.java](https://github.com/ponassi/SWT_Project_2019-2020/blob/master/Homework.java) e [Functions.java](https://github.com/ponassi/SWT_Project_2019-2020/blob/master/Functions.java))
+Il codice presenta una documentazione XML al suo interno con la spiegazione di ogni funzione nello specifico (Consultare i file [Homework.java](https://github.com/ponassi/SWT_Project_2019-2020/blob/master/Homework.java) e [Functions.java](https://github.com/ponassi/SWT_Project_2019-2020/blob/master/Functions.java)).
